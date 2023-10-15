@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HomeComponent } from './home/home.component';
+import { ArtComponent } from './art/art.component';
 
 const routes: Routes = [
   {
@@ -8,8 +9,13 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        title: "Tee's Doodles",
-        component: LandingPageComponent
+        title: "Tee's Doodles!",
+        component: HomeComponent
+      },
+      {
+        path: 'art',
+        title: "Tee's Art Commissions!",
+        component: ArtComponent
       }
     ]
   }
@@ -19,5 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
-}
+export class AppRoutingModule { }
