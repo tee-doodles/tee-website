@@ -1,0 +1,23 @@
+name: Build & Deploy Angular Website
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install and build website
+        working-directory: ./
+        run: npm install && npm run build:prod && cp docs/index.html docs/404.html
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./docs # The folder the action should deploy.        
