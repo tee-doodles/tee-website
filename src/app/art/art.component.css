@@ -3,12 +3,37 @@ html{
     text-align: center;
 }
 
+.mat-accordion {
+    margin: 0;
+}
+
+.mat-expansion-panel-header .mat-expanded{
+    padding: 0;
+}
+
+::ng-deep .mat-expansion-panel-body {
+    padding-top: 16px !important;
+    padding-bottom: 0 !important;
+}
+
+.mat-expansion-panel p {
+    padding-top: 0px;
+}
+
+.accordion {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .art-row {
     width: 100%;
     position: relative;
     display: flex;
     margin: 0 auto;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .art-column {
@@ -19,6 +44,7 @@ html{
     outline-style: solid;
     border-radius: 3px;
     text-align: center;
+    cursor: pointer;
 }
 
 .art-column img{
