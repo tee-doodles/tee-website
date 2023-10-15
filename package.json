@@ -5,10 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --base-href=/portfolio/",
+    "build:prod": "ng build --base-href=/tee-website/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "homepage": "./tee-website",
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.1.0",
