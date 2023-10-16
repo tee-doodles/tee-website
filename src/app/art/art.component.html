@@ -1,20 +1,21 @@
 <html>
     <body>
         <h1>Tee's Art Commissions</h1>
-        <h3>All prices listed here are in GBP and are subject to change depending on complexity</h3>
+        <h3>All prices listed here are in GBP and are subject to change depending on complexity<br/>
+        Click on one of the panels to view details about extras and more pricing</h3>
 
         <div class="art-row">
-            <div class="art-column" style="background-color: #CCC; outline-color: #AAA;" (click)="openDialog()">
+            <div class="art-column" style="background-color: #CCC; outline-color: #AAA;" (click)="openDialog(0)">
                 <h3>Black & White</h3>
                 <img src="assets/art/black_white.png">
                 <h4>Half: £??+ / Full: £??+</h4>
             </div>
-            <div class="art-column" style="background-color: #C78EC5; outline-color: #A56CA3;">
+            <div class="art-column" style="background-color: #C78EC5; outline-color: #A56CA3;" (click)="openDialog(1)">
                 <h3>Coloured</h3>
                 <img src="assets/art/coloured.png">
                 <h4>Half: £??+ / Full: £??+</h4>
             </div>
-            <div class="art-column" style="background-color: #C673C3; outline-color: #A451A1;">
+            <div class="art-column" style="background-color: #C673C3; outline-color: #A451A1;" (click)="openDialog(2)">
                 <h3>Shaded</h3>
                 <img src="assets/art/shaded.png">
                 <h4>Half: £??+ / Full: £??+</h4>
