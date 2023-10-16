@@ -1,7 +1,9 @@
 <html>
     <body>
-        <h1>Tee's Art Commissions</h1>
-        <h3>All prices listed here are in GBP and are subject to change depending on complexity<br/>
+        <br/>
+        <h1 style="font-size: 36px;">Tee's Art Commissions</h1>
+        <h3 style="font-size: 24px;">All prices listed here are in GBP and are subject to change depending on complexity, 
+            everything is handled through PayPal<br/>
         Click on one of the panels to view details about extras and more pricing</h3>
 
         <div class="art-row">
@@ -24,31 +26,119 @@
         
         <div class = "accordion">
             <mat-accordion displayMode="flat" multi="true">
-                <!-- <mat-expansion-panel hideToggle>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                    This is the expansion title
-                    </mat-panel-title>
-                    <mat-panel-description>
-                    This is a summary of the content
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>This is the primary content of the panel.</p>
-                </mat-expansion-panel> -->
                 <mat-expansion-panel (opened)="panelOpenState = true"
                                     (closed)="panelOpenState = false">
-                <mat-expansion-panel-header style="background-color: #ccc;" [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
-                    <mat-panel-title>
-                    Hello
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Contact
                     </mat-panel-title>
-                    <mat-panel-description>
-                    Foo
+                    <mat-panel-description style="font-size: 18px;">
+                    How can I get in touch for a commission???
                     </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
-                <p>Yeah</p>
+                <p>The best way to get in touch with me initially is via Twitter/X if we haven't spoken before, it's where 
+                    I'm most active. Though it seems I don't actually get pings for message requests, which is really annoying.
+                    It's not that I'm ignoring you deliberately, it's just that Elon is doing my DMs dirty.
+                    <br/>Typically after we've gotten the ball rolling, I'll give you my Discord handle and we can go from there :)
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Payment
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    How will you steal my money from me???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I use PayPal for commissions, I don't have any other alternatives and don't plan on using any either.
+                    <br />
+                    Payment will be up-front in full, though this can be negotiated (if you'd prefer to see a sketch first or something)
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Lineart
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    How will the commission look???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Typically when I draw, I like to use a Binary Pen, which produces a solid, kind of pixelated outline. 
+                    I like the look of it personally, and I find that it generally makes life easier when it 
+                    comes to the colouring stage.
+                </p>
+                <img src="assets/art/commission_examples/binary_brush.png">
+                <p>I do sometimes use more conventional brushes if that is your preference, though that may affect the price
+                    depending on the level of detail.
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Tech
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    What do you draw in???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I use Clip Studio Paint to draw :)
+                    <br /> If you want the source files when I'm done with a commission, go ahead and ask and I'll send it to you.
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    References
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    Can I show you what I want it to look like???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Of course! Using visual references for a commission, be it a picture of a pose, or a stickman drawing, or whatever,
+                    really helps out as it gives me a clearer idea of what you want. 
+                    Just don't send me NSFW material, I'm not interested in seeing it.
+                </p>
                 </mat-expansion-panel>
             </mat-accordion>
         </div>
+
+        <div class = "dosndonts">
+            <mat-accordion displayMode="flat" multi="true">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #9BFFA8;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px; text-align: center; width: 100%; justify-content: center;">
+                    What I will draw
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>
+                </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <br />
+            <mat-accordion displayMode="flat" multi="true">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #FF8989;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px; text-align: center; width: 100%; justify-content: center;">
+                    What I won't draw
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>
+                </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+
     </body>
 </html>

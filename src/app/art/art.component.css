@@ -27,6 +27,34 @@ html{
     margin-right: auto;
 }
 
+.accordion img {
+    padding-bottom: 16px;
+}
+
+.accordion p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.dosndonts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 80%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.dosndonts .mat-accordion {
+    width: 48%;
+}
+
+.dosndonts p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .art-row {
     width: 100%;
     position: relative;
@@ -34,6 +62,11 @@ html{
     margin: 0 auto;
     justify-content: center;
     padding-bottom: 40px;
+}
+
+.art-row h3 {
+    padding-top: 16px;
+    font-size: 32px;
 }
 
 .art-column {
@@ -67,5 +100,14 @@ html{
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
+    }
+
+    .dosndonts {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 80%;
+        height: auto;
+        position: relative;
+        display: inline-block;
     }
 }

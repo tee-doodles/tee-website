@@ -21,9 +21,9 @@ export class ArtComponent {
     const dialogRef = this.dialog.open(DialogContentExampleDialog);
     dialogRef.componentInstance.name = value;
     
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
   }
   
   panelOpenState = false;
