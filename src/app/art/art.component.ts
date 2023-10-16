@@ -18,7 +18,7 @@ export class ArtComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog(value: Number) {
-    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+    const dialogRef = this.dialog.open(DialogContent);
     dialogRef.componentInstance.name = value;
     
     // dialogRef.afterClosed().subscribe(result => {
@@ -30,12 +30,12 @@ export class ArtComponent {
 }
 
 @Component({
-  selector: 'dialog-content-example-dialog',
-  templateUrl: './dialog-content-example-dialog.html',
+  selector: 'dialog-content',
+  templateUrl: './dialog-content.html',
   styleUrls: ['./dialog-content.css'],
   standalone: true,
   imports: [MatDialogModule, MatButtonModule, CommonModule],
 })
-export class DialogContentExampleDialog {
+export class DialogContent {
   name: Number = 0;
 }

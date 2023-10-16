@@ -78,6 +78,13 @@ html{
     border-radius: 3px;
     text-align: center;
     cursor: pointer;
+    transition: all 0.25s;
+}
+
+.art-column:hover{
+    transform: scale(1.04, 1.04);
+    transition: all 0.25s;
+    filter: brightness(100%);
 }
 
 .art-column img{
@@ -87,7 +94,16 @@ html{
     margin-right: auto;
 }
 
+.art-column h4{
+    padding-top: 12px;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 1000px) {
+    html{
+        margin-left: 0px;
+    }
+
     .art-row {
         width: 100%;
         height: auto;

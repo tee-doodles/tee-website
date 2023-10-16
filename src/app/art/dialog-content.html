@@ -1,0 +1,46 @@
+<!-- <h2 mat-dialog-title></h2> -->
+<mat-dialog-content class="mat-typography">
+    <ng-container [ngSwitch]="name">
+        <ng-container *ngSwitchCase="0">
+            <h1>Black & White</h1>
+            <h2>All outlined, no colours aside from some bits shaded in grey.</h2>
+            <h2>Extras: 
+                <br/>2nd Character - Half: £5+ / Full: £10+
+                <br/>Simple BG - £7+ (depends on the complexity)
+                <br/>Alts - Half: £2+ / Full: £3+ (depends on the complexity of the alts)
+            </h2>
+        </ng-container>
+        <ng-container *ngSwitchCase="1">
+            <h1>Coloured</h1>
+            <h2>All outlined and coloured.</h2>
+            <h2>Extras: 
+                <br/>2nd Character - Half: £7.50+ / Full: £12.50+
+                <br/>Simple BG - £10+ (depends on the complexity)
+                <br/>Alts - Half: £2+ / Full: £4+ (depends on the complexity of the alts)
+            </h2>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+            <h1>Simple Shading</h1>
+            <h2>Outlined, coloured and flat shading.</h2>
+            <h2>Extras: 
+                <br/>2nd Character - Half: £12.50+ / Full: £17.50+
+                <br/>Simple BG (limited or no shading) - £10+ (depends on the complexity)
+                <br/>Alts - Half: £3+ / Full: £6+ (depends on the complexity of the alts)
+            </h2>
+        </ng-container>
+        <ng-container *ngSwitchCase="3">
+            <h1>Blended Shading</h1>
+            <h2>Outlined, coloured and shading that is blended in with the colours.</h2>
+            <h2>Extras: 
+                <br/>2nd Character - Half: £15+ / Full: £20+
+                <br/>Simple BG (limited or no shading) - £10+ (depends on the complexity)
+                <br/>Alts - Half: £3+ / Full: £6+ (depends on the complexity of the alts)
+            </h2>
+        </ng-container>
+    </ng-container>
+    
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
