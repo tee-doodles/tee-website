@@ -1,10 +1,9 @@
-import { TmplAstRecursiveVisitor } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { CommonModule } from '@angular/common';
-import { NoopScrollStrategy, ScrollStrategyOptions } from '@angular/cdk/overlay';
+import { NoopScrollStrategy } from '@angular/cdk/overlay';
 
 
 @Component({
