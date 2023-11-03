@@ -65,7 +65,22 @@ html{
     padding-bottom: 40px;
 }
 
+.art-row-2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
 .art-row h3 {
+    padding-top: 16px;
+    font-size: 32px;
+}
+
+.art-row-2 h3 {
     padding-top: 16px;
     font-size: 32px;
 }
@@ -80,6 +95,10 @@ html{
     text-align: center;
     cursor: pointer;
     transition: all 0.25s;
+}
+
+.art-row-2 .art-column {
+    width: calc(40% + 30px);
 }
 
 .art-column:hover{
@@ -100,6 +119,37 @@ html{
     font-size: 24px;
 }
 
+.art-examples {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+
+.art-example{
+    /* height: 25%; */
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.art-example img{
+    /* display: block; */
+    /* max-width: 100%; */
+    height: 45vh;
+    outline: 3px;
+    outline-style: solid;
+}
+
+.art-example p{
+    padding-top: 10px;
+}
+
 @media screen and (max-width: 1000px) {
     html{
         margin-left: 0px;
@@ -117,6 +167,13 @@ html{
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
+    }
+
+    .art-examples {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
     }
 
     .dosndonts {
