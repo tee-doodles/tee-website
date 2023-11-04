@@ -50,6 +50,7 @@
       position: relative;
     }
     .sidebar a {float: left;}
+    .sidebar .plugs{margin-top: 0px; position:relative;float:left;}
     div.content {margin-left: 0;}
   }
   
@@ -59,5 +60,7 @@
       text-align: center;
       float: none;
     }
+
+    .sidebar .plugs{display:none;}
   }
   

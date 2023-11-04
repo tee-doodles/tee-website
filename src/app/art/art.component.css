@@ -150,23 +150,72 @@ html{
     padding-top: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     html{
         margin-left: 0px;
     }
+}
+
+@media screen and (max-width: 1000px) {
 
     .art-row {
         width: 100%;
         height: auto;
         position: relative;
         display: block;
+        padding-bottom: 0;
     }
+
+    .art-row-2 {
+        padding-top: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
+    }
+
+    .art-row-2 .art-column {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 40vh;
+    }
+
+    .art-row-2 .art-column img{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .art-column {
         margin-top: 15px;
         margin-bottom: 15px;
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
+        height: 40vh;
+        position: relative;
+    }
+
+    .art-column img{
+        width: 17.5vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .art-column h4{
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 5px;
     }
 
     .art-examples {
