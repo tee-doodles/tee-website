@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ArtComponent } from './art/art.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModellingComponent } from './modelling/modelling.component';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { ModellingComponent } from './modelling/modelling.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

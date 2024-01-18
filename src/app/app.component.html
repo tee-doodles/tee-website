@@ -1,13 +1,21 @@
 <div class="sidebar">
+    <div class="title">
+        <img src={{imageName}}/>
+        <p>The Home of Tee!</p>
+    </div>
     <div class="routes">
-        <a href="">Home</a>
-        <a href="art">Art Comms</a>
-        <a href="modelling">3D Modelling Comms</a>
+        <a routerLink="">Home</a>
+        <a routerLink="art">Art Comms</a>
+        <a routerLink="modelling">3D Modelling Comms</a>
     </div>
     <div class="plugs">
         <a href="https://twitter.com/Tee_Doodles"target="_blank">Twitter</a>
         <a href="https://bsky.app/profile/teedoodles.bsky.social"target="_blank">Bluesky</a>
     </div>
+</div>
+
+<div class="dancingkitt">
+    <img src="assets/goofing/kitt_dance_small.gif"/>
 </div>
 
 <router-outlet></router-outlet>
