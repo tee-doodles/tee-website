@@ -1,6 +1,8 @@
 <div class="sidebar">
     <div class="title">
-        <img src={{imageName}}/>
+        <button (click)="testFunc()">
+            <img src={{imageName}}/>
+        </button>
         <p>The Home of Tee!</p>
     </div>
     <div class="routes">
@@ -12,6 +14,7 @@
         <a href="https://twitter.com/Tee_Doodles"target="_blank">Twitter</a>
         <a href="https://bsky.app/profile/teedoodles.bsky.social"target="_blank">Bluesky</a>
     </div>
+    <img hidden *ngFor="let img of images;" [src]="img" (load)="loaded()" />
 </div>
 
 <div class="dancingkitt">

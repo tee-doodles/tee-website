@@ -11,6 +11,13 @@ export class AppComponent implements OnInit {
   goobValue = 0;
   imageName="";
 
+  images = ["assets/sidebar/Goobers0.png",
+    "assets/sidebar/Goobers1.png", 
+    "assets/sidebar/Goobers2.png", 
+    "assets/sidebar/Goobers3.png", 
+    "assets/sidebar/Goobers4.png"];
+  loadedImages = 0;
+
   constructor(private appService: AppService){}
 
   ngOnInit(){
@@ -21,5 +28,22 @@ export class AppComponent implements OnInit {
       this.goobValue = this.appService.getGoob();
     }
     this.imageName = "assets/sidebar/Goobers"+ this.goobValue +".png";
+  }
+
+  public testFunc(){
+    const previousGoobValue = this.goobValue;
+    while(previousGoobValue == this.goobValue){
+      this.appService.setGoob();
+      this.goobValue = this.appService.getGoob();
+    }
+    
+    this.imageName = "assets/sidebar/Goobers"+ this.goobValue +".png";
+  }
+
+  public loaded(){
+    this.loadedImages++;
+    if(this.images.length == this.loadedImages){
+      //all images loaded
+    }
   }
 }

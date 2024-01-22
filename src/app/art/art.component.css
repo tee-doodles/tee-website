@@ -1,9 +1,31 @@
 html{
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
+    background-color: rgb(22, 20, 22);
+    height: auto;
 }
 
+body{
+    background-color: rgb(22, 20, 22);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h1 {
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+  
 .mat-accordion {
     margin: 0;
 }
@@ -35,6 +57,7 @@ html{
 .accordion p {
     font-size: 18px;
     line-height: 24px;
+    color: black;
 }
 
 .dosndonts {
@@ -96,6 +119,10 @@ html{
     text-align: center;
     cursor: pointer;
     transition: all 0.25s;
+}
+
+.art-column h3 {
+    color: black;
 }
 
 .art-row-2 .art-column {

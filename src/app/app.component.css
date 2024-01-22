@@ -1,11 +1,60 @@
+html{
+  background-color: rgb(22, 20, 22);
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #1b1b1b;
   position: fixed;
   height: 100%;
   overflow: auto;
+}
+
+.sidebar button{
+  width: 50px;
+  height: 50px;
+  position:relative;
+  animation: press 0.333s ease-in-out backwards;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.sidebar button:active{
+  animation: none;
+}
+
+@keyframes press{
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.5, 0.3) rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg) scale(0.75, 1.25);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  to{
+    transform: scale(1);
+  }
+}
+
+.sidebar button img{
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .dancingkitt{
@@ -18,15 +67,20 @@
   bottom: 0;
   /* right: 0; */
   left: calc(100vw - 180px);
+  background-color: rgb(22, 20, 22);
 }
 
 /* Sidebar links */
 .sidebar a {
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 16px;
   font-size: 16px;
   text-decoration: none;
+}
+
+.sidebar p {
+  color: white;
 }
 
 /* Active/current link */
