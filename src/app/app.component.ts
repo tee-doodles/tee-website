@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   goobValue = 0;
   imageName="";
 
+  // used for preloading goobers
   images = ["assets/sidebar/Goobers0.png",
     "assets/sidebar/Goobers1.png", 
     "assets/sidebar/Goobers2.png", 
