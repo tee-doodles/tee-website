@@ -181,13 +181,13 @@ p{
 }
 
 @media screen and (max-width: 1100px) {
-    html{
+    body{
       margin-right: 0px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    html{
+    body{
         margin-left: 0px;
     }
 }

@@ -7,11 +7,13 @@ import { ArtComponent } from './art/art.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModellingComponent } from './modelling/modelling.component';
 import { AppService } from './app.service';
+import { DownloadsComponent } from './downloads/downloads/downloads.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModellingComponent,
+    DownloadsComponent,
   ],
   imports: [
     BrowserModule,
