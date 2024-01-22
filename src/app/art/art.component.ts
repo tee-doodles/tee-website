@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
@@ -13,9 +13,14 @@ import { NoopScrollStrategy } from '@angular/cdk/overlay';
   standalone: true,
   imports: [MatExpansionModule, MatDialogModule],
 })
-export class ArtComponent {
+export class ArtComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {}
+
+  ngOnInit(){
+    // @ts-ignore
+    window.scrollTo({top: 0, behavior: 'instant'});
+  }
 
   openDialog(value: Number) {
     const dialogRef = this.dialog.open(DialogContent, {

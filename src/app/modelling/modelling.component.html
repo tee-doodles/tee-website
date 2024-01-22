@@ -7,8 +7,7 @@
         <br />
         <h1 style="font-size: 36px;">Tee's Modelling Commissions</h1>
         <h3 style="font-size: 24px;">This page is currently under construction, 
-            these commissions are closed while I figure it all out.
-        <br/>In the meantime, here's some stuff about the Zim models I've made :)</h3>
+            please bear with me.</h3>
         <br/>
         <h2 style="font-size: 30px">2nd Generation 
             [<a href="https://www.dropbox.com/scl/fi/tsv4o2ee5sgrsy3z55g90/Zim_V2.zip?rlkey=9nguogkeklm3qncwpiksmhz8d&dl=0">Download</a>]
@@ -20,5 +19,105 @@
         <img style="width: 40%" src="assets/art/model_examples/zim_facemovements.gif">
         <br/>
         <br/>
+
+        <div class = "accordion">
+            <mat-accordion displayMode="flat" multi="true">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Contact
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    How can I get in touch for a commission???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>The best way to get in touch with me initially is via Twitter/X if we haven't spoken before, it's where 
+                    I'm most active. Though it seems I don't actually get pings for message requests, which is really annoying.
+                    It's not that I'm ignoring you deliberately, it's just that Elon is doing my DMs dirty.
+                    <br/>Typically after we've gotten the ball rolling, I'll give you my Discord handle and we can go from there :)
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Payment
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    How will you steal my money from me???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I use PayPal for commissions, I don't have any other alternatives and don't plan on using any either.
+                    <br />
+                    Payments for modelling is not up-front, once I get a good looking model created, I will then ask for payment.
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Aesthetic
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    What will the model look like???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>These models are specifically designed to have a lowpoly, PSX style aesthetic to them.
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Tech
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    What do you model in???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Blender! I use the Steam version, which at the time of writing (January 2024) is Blender 4.0
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    References
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    Can I show you what I want it to look like???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Of course! Using visual references for a commission, be it a picture of a pose, or a stickman drawing, or whatever,
+                    really helps out as it gives me a clearer idea of what you want. 
+                    Just don't send me NSFW material, I'm not interested in seeing it.
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Adjustments
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    Will you make changes for me???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>If I've made some dumb error and it needs fixing (i.e missing bit of shading, or it's not blended), 
+                    I'll fix that just fine :)
+                    <br/>Regarding pretty big adjustments, for example if you want the pose changed, then
+                    I'll need to know BEFORE I start outlining onwards.
+                    <br/>I'll send you the sketch when it's done and then wait for your approval to go ahead with outlining, 
+                    after this point I'm going to assume it's all good and won't be changed.
+                </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
     </body>
 </html>

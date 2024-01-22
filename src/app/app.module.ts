@@ -12,7 +12,6 @@ import { DownloadsComponent } from './downloads/downloads/downloads.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ModellingComponent,
     DownloadsComponent,
   ],
   imports: [
