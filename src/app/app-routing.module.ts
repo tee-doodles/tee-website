@@ -21,12 +21,12 @@ const routes: Routes = [
       },
       {
         path: 'modelling',
-        title: "Tee's Modelling Commissions!",
+        title: "Tee's 3D Commissions!",
         component: ModellingComponent
       },
       {
         path: 'downloads',
-        title: "Tee's Released Stuff!",
+        title: "Tee's Downloadable Stuff!",
         component: DownloadsComponent
       }
     ]

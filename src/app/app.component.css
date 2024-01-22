@@ -26,6 +26,15 @@ html{
   animation: none;
 }
 
+.sidebar button img{
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes press{
   0% {
     transform: scale(1);
@@ -46,15 +55,6 @@ html{
   to{
     transform: scale(1);
   }
-}
-
-.sidebar button img{
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .dancingkitt{
