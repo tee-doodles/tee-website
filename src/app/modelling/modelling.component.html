@@ -26,39 +26,6 @@
                                     (closed)="panelOpenState = false">
                 <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
                     <mat-panel-title style="font-size: 24px;">
-                    Contact
-                    </mat-panel-title>
-                    <mat-panel-description style="font-size: 18px;">
-                    How can I get in touch for a commission???
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>The best way to get in touch with me initially is via Twitter/X if we haven't spoken before, it's where 
-                    I'm most active. Though it seems I don't actually get pings for message requests, which is really annoying.
-                    It's not that I'm ignoring you deliberately, it's just that Elon is doing my DMs dirty.
-                    <br/>Typically after we've gotten the ball rolling, I'll give you my Discord handle and we can go from there :)
-                </p>
-                </mat-expansion-panel>
-
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                    (closed)="panelOpenState = false">
-                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
-                    <mat-panel-title style="font-size: 24px;">
-                    Payment
-                    </mat-panel-title>
-                    <mat-panel-description style="font-size: 18px;">
-                    How will you steal my money from me???
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>I use PayPal for commissions, I don't have any other alternatives and don't plan on using any either.
-                    <br />
-                    Payments for modelling is not up-front, once I get a good looking model created, I will then ask for payment.
-                </p>
-                </mat-expansion-panel>
-
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                    (closed)="panelOpenState = false">
-                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
-                    <mat-panel-title style="font-size: 24px;">
                     Aesthetic
                     </mat-panel-title>
                     <mat-panel-description style="font-size: 18px;">
@@ -87,22 +54,6 @@
                                     (closed)="panelOpenState = false">
                 <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
                     <mat-panel-title style="font-size: 24px;">
-                    References
-                    </mat-panel-title>
-                    <mat-panel-description style="font-size: 18px;">
-                    Can I show you what I want it to look like???
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>Of course! Using visual references for a commission, be it a picture of a pose, or a stickman drawing, or whatever,
-                    really helps out as it gives me a clearer idea of what you want. 
-                    Just don't send me NSFW material, I'm not interested in seeing it.
-                </p>
-                </mat-expansion-panel>
-
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                    (closed)="panelOpenState = false">
-                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
-                    <mat-panel-title style="font-size: 24px;">
                     Adjustments
                     </mat-panel-title>
                     <mat-panel-description style="font-size: 18px;">
@@ -119,5 +70,38 @@
                 </mat-expansion-panel>
             </mat-accordion>
         </div>
+
+        <div class = "dosndonts">
+            <mat-accordion displayMode="flat" multi="true">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #9BFFA8;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px; text-align: center; width: 100%; justify-content: center;">
+                    What I will model
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>
+                    Irkens :) funny ayylmaos are cool<br/>
+                    Humans/humanoid characters<br/>
+                </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <br />
+            <mat-accordion displayMode="flat" multi="true">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #FF8989;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px; text-align: center; width: 100%; justify-content: center;">
+                    What I won't model
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>
+                    NSFW models<br/>
+                    Non-humanoid designs
+                </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        <br/>
     </body>
 </html>

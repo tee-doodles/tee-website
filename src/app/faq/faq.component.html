@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <br />
+        <div class="banner">
+            <img src="assets/art/kitt_xeon_banner.png"/>
+        </div>
+        <br />
+        <h1 style="font-size: 36px;">Tee's Commission FAQ</h1>
+        <h3 style="font-size: 24px;">Please read up on this stuff so I don't have to repeat myself :)</h3>
+        <br />
+        <div class = "accordion">
+            <mat-accordion displayMode="flat" multi="true">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Contact
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    How can I get in touch for a commission???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>The best way to get in touch with me initially is via Twitter/X if we haven't spoken before, it's where 
+                    I'm most active. Though it seems I don't actually get pings for message requests, which is really annoying.
+                    It's not that I'm ignoring you deliberately, it's just that Elon is doing my DMs dirty.
+                </p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header style="background-color: #ddd;" [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                    <mat-panel-title style="font-size: 24px;">
+                    Payment
+                    </mat-panel-title>
+                    <mat-panel-description style="font-size: 18px;">
+                    How will you steal my money from me???
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I use PayPal for commissions, I don't have any other alternatives and don't plan on using any either.
+                    <br />
+                    All prices listed on the site are in GBP.
+                    <br />
+                    For Art commissions, payment will be up-front in full.
+                    <br />
+                    For 3D commissions, payment will be taken after the modelling process is complete.
+                </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </body>
+</html>
+

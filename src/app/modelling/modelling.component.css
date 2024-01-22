@@ -33,6 +33,25 @@ body{
   /* transform: translate(0, -33vh); */
 }
 
+.dosndonts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 80%;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.dosndonts .mat-accordion {
+  width: 48%;
+}
+
+.dosndonts p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 h1 {
   font-size: 36px;
   color: white;

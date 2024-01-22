@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ArtComponent } from './art/art.component';
 import { ModellingComponent } from './modelling/modelling.component';
-import { DownloadsComponent } from './downloads/downloads/downloads.component';
+import { DownloadsComponent } from './downloads/downloads.component';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,11 @@ const routes: Routes = [
         path: 'downloads',
         title: "Tee's Downloadable Stuff!",
         component: DownloadsComponent
+      },
+      {
+        path: 'faq',
+        title: "Tee's FAQ!",
+        component: FaqComponent
       }
     ]
   }
