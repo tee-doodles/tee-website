@@ -15,6 +15,8 @@ import { NoopScrollStrategy } from '@angular/cdk/overlay';
 })
 export class ArtComponent implements OnInit {
 
+  imageName="assets/art/commission_styles/black_white.png";
+
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(){
@@ -24,7 +26,7 @@ export class ArtComponent implements OnInit {
 
   openDialog(value: Number) {
     const dialogRef = this.dialog.open(DialogContent, {
-      scrollStrategy: new NoopScrollStrategy()
+      scrollStrategy: new NoopScrollStrategy(),
     });
     dialogRef.componentInstance.name = value;
     
@@ -34,6 +36,10 @@ export class ArtComponent implements OnInit {
   }
   
   panelOpenState = false;
+
+  setCas(value: String){
+    this.imageName="assets/art/commission_styles/"+value+".png";
+  }
 }
 
 @Component({

@@ -34,22 +34,10 @@ body{
     transform: translate(0, -15%);
 }
 
-h1 {
+h1, h2, h3, p {
     color: white;
 }
 
-h2{
-    color: white;
-}
-
-h3{
-    color: white;
-}
-
-p{
-    color: white;
-}
-  
 .mat-accordion {
     margin: 0;
 }
@@ -102,6 +90,68 @@ p{
     font-size: 18px;
     line-height: 24px;
     color: black;
+}
+
+.art-styles{
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+.art-styles img {
+    /* height: 25vh; */
+    max-height: 500px;
+    width: auto;
+}
+
+.art-styles .art-styles-buttons {
+    width: 40%;
+    max-height: 500px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.art-style-button {
+    width: 80%;
+    margin-left: calc(15px + 15%);
+    margin-right: 15px;
+    outline: 5px;
+    outline-style: solid;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s;
+    /* margin-top: 16px;
+    margin-bottom: 16px; */
+}
+
+.art-style-button:hover{
+    transform: scale(1.04, 1.04);
+    transition: all 0.25s;
+    filter: brightness(100%);
+}
+
+.art-style-button h3{
+    color: black;
+    font-size: 32px;
+
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.art-style-button h4{
+    color: black;
+    font-size: 24px;
+    margin: auto;
 }
 
 .art-row {
@@ -170,6 +220,7 @@ p{
 .art-column h4{
     padding-top: 12px;
     font-size: 24px;
+    vertical-align: middle;
 }
 
 .art-examples {
@@ -185,18 +236,13 @@ p{
 
 
 .art-example{
-    /* height: 25%; */
     padding-left: 10px;
     padding-right: 10px;
     justify-content: center;
 }
 
 .art-example img{
-    /* display: block; */
-    /* max-width: 100%; */
     height: 20vw;
-    /* width: 45vw; */
-    /* max-wi */
     outline: 3px;
     outline-style: solid;
 }
@@ -208,6 +254,24 @@ p{
 @media screen and (max-width: 1100px) {
     body{
       margin-right: 0px;
+    }
+
+    .art-styles img {
+        display: none;
+    }
+
+    .art-styles .art-styles-buttons {
+        margin-top: 16px;
+        width: 100%;
+        gap: 32px;
+    }
+
+    .art-styles .art-style-button {
+        /* margin-top: 15px;
+        margin-bottom: 15px; */
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
     }
 }
 
